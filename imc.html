@@ -1,0 +1,51 @@
+<meta charset="UTF 8">
+
+<h3> Vamos descobrir através do programa qual nosso Índice de Massa Corporal - IMC </h3>
+
+<script>
+
+
+function pulaLinha () {
+
+	document.write("<br><hr><br>");
+
+}
+
+function mostra (frase) {
+
+//o <big> tem que estar entre aspas e concatenar com a frase para funcionar.
+
+	document.write("<big>" + frase + "</big>");
+	pulaLinha ();
+
+}
+
+function calculoImc (peso, altura) {
+	
+	imc = peso / (altura * altura);
+	document.write ("O resultado do IMC calculado é: " + Math.round(imc));
+	pulaLinha();
+
+}
+
+calculoImc (75, 1.65);
+calculoImc (62, 1.54);
+calculoImc (75, 1.59);
+calculoImc (117, 1.75);
+calculoImc (16, 1.00);
+
+
+
+//var pesoCarol = 75, alturaCarol = 1.65, imcCarol = pesoCarol / (alturaCarol * alturaCarol);
+
+//mostra ("O meu IMC é: " + (Math.round(imcCarol)));
+
+/* Pra fazer esse cálculo mais de uma vez podemos criar uma função para o cálculo que facilita
+tanto na leitura como na escrita desse código. Vejamos abaixo:
+*/
+
+
+
+
+</script>
+
